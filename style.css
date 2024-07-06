@@ -8,10 +8,18 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
+.tableauPlaceholder { 
+    border-radius: 3px;
+
+
+}
 header {
-    background: #fff;
+    background: rgb(224, 217, 210);
     padding: 20px 0;
     box-shadow: 0 4px 2px -2px gray;
 }
@@ -70,7 +78,7 @@ header {
         position: absolute;
         top: 70px;
         right: 0;
-        background: white;
+        background: rgb(247,235,219);
         flex-direction: column;
         width: 100%;
         text-align: center;
