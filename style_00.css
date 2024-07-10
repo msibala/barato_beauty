@@ -6,11 +6,8 @@ body {
 }
 
 nav {
-    background-color: rgba(248, 248, 248, 0.8);
+    background-color: #f8f8f8;
     padding: 1rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
 }
 
 nav ul {
@@ -32,33 +29,65 @@ nav ul li a:hover {
 
 .hero {
     height: 100vh;
-    background-image: url('images/image0.jpeg');
-    background-size: cover;
-    background-position: top;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.hero-content {
-    /* background-color: rgba(255, 255, 255, 0.7); */
-    padding: 2rem;
-    margin-left: 1%;
-    margin-top: 40%;
-    max-width: 40%;
-    border-radius: 3%;
-  
+    text-align: center;
+    background-color: #f0f0f0;
 }
 
 .hero h1 {
     font-size: 3.5rem;
-    color: rgb(208,128,87);
+    color: #000;
     margin: 0 0 1rem 0;
 }
 
 .hero h2 {
-    font-size: 1.5rem;
-    color: rgb(106,3,18);
+    font-size: 2rem;
+    color: #333;
     margin: 0;
+/* }
+
+.brand-marquee {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+}
+
+.brand-marquee-content {
+    display: flex;
+    animation: marquee 30s linear infinite;
+}
+
+.brand-marquee-content img {
+    height: 40px;
+    margin: 0 20px;
+    object-fit: contain; */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pause animation on hover */
+.brand-marquee:hover .brand-marquee-content {
+    animation-play-state: paused;
+}
+
+/* Ensure hero can accommodate the marquee */
+.hero {
+    position: relative;
+    padding-bottom: 60px; /* Adjust based on marquee height */
 }
 
 .chart-container {
@@ -78,11 +107,6 @@ nav ul li a:hover {
 
     nav ul li {
         margin: 0.5rem 0;
-    }
-
-    .hero-content {
-        margin-left: 5%;
-        max-width: 90%;
     }
 
     .hero h1 {
